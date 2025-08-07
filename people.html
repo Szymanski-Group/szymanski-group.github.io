@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>People | MD2 Research Group | Nathan Szymanski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="People in the Materials Design through Dynamics Research Group led by Prof. Nathan Szymanski">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Additional styles for people page */
+        .people-container {
+            margin-top: 80px;
+        }
+        
+        .person-card {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 80px;
+            align-items: flex-start;
+        }
+        
+        .person-image {
+            flex: 0 0 250px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .person-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .person-info {
+            flex: 1;
+        }
+        
+        .person-name {
+            margin-bottom: 10px;
+        }
+        
+        .person-title {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        
+        .person-bio {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .person-links a {
+            margin-right: 15px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .person-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .section-title {
+            margin-bottom: 40px;
+        }
+        
+        .join-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            margin-top: 60px;
+        }
+        
+        .join-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .person-card {
+                flex-direction: column;
+            }
+            
+            .person-image {
+                width: 100%;
+                max-width: 250px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="people-page">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button id="menu-close" class="menu-close"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li class="active"><a href="people.html">People</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="MD2 Research Group Logo">
+                        <span class="group-name"></span>
+                    </a>
+                </div>
+                
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li class="active"><a href="people.html">People</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="menu-toggle" class="menu-toggle" aria-label="Mobile menu toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- People Content -->
+    <section class="people-container">
+        <div class="container">
+            <div style="height: 60px;"></div>
+            <h1 class="section-title">Our Team</h1>
+            
+            <!-- PI Card -->
+            <div class="person-card">
+                <div class="person-image">
+                    <img src="assets/img/nathan-szymanski.jpg" alt="Nathan Szymanski">
+                </div>
+                <div class="person-info">
+                    <h2 class="person-name">Nathan Szymanski</h2>
+                    <div class="person-title">Principal Investigator | Assistant Professor</div>
+                    <div class="person-bio">
+                        <p>Nathan is a materials scientist working to advance sustainable materials by integrating computational and experimental methods. His research combines <i>ab-initio</i> quantum chemistry, machine learning, and kinetic Monte Carlo simulations to model solid-state inorganic materials synthesis. By pairing these techniques with <i>in-situ</i> characterization and AI-driven data analysis, his group streamlines the process between discovery and commercialization of novel energy materials.</p>
+                        <div style="height: 10px;"></div>
+                        <p>Prior to joining UCLA, Nathan completed his PhD at UC Berkeley with Prof. Gerbrand Ceder and was a postdoc with Prof. Chris Bartel at the University of Minnesota. Nathan's work has been recognized with awards including the NSF Graduate Research Fellowship, Didier de Fontaine Award in Theory and Computation, and Jane Lewis Fellowship in Mining.</p>
+                    </div>
+                    <div class="person-links">
+                        <a href="mailto:nszymans@ucla.edu"><i class="fas fa-envelope"></i> Email</a>
+                        <a href="https://scholar.google.com/citations?user=TGMOv3kAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                        <a href="https://github.com/njszym"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="assets/files/CV.pdf"><i class="fas fa-file-pdf"></i> CV</a>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Graduate Students</h2>
+            
+            <!-- PhD Student -->
+            <div class="person-card">
+                <div class="person-image">
+                    <img src="assets/img/Claude-Photo.jpg" alt="Xinyang Tong">
+                </div>
+                <div class="person-info">
+                    <h3 class="person-name">Xinyang (Claude) Tong</h3>
+                    <div class="person-title">PhD Student</div>
+                    <div class="person-bio">
+                        <p>Xinyang is a PhD student working on AI for X-ray diffraction. He creates deep learning algorithms to automate the collection and analysis of characterization data, providing open-source foundation models for the materials community.</p>
+                    </div>
+                    <div class="person-links">
+                        <a href="mailto:tongxy@g.ucla.edu"><i class="fas fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Prospective Students</h2>
+            <p>We are always looking for motivated graduate and undergraduate students to join our group. Prospective graduate students should apply through the <a href="https://www.mse.ucla.edu/" target="_blank">UCLA Materials Science and Engineering Department</a>. Undergraduate students at UCLA interested in research opportunities should email Prof. Szymanski with a brief description of your interests and background.</p>
+            <div style="height: 40px;"></div>
+            <!--
+            <h2 class="section-title">Undergraduate Researchers</h2>
+            <p>We welcome motivated undergraduate students to participate in our research. Opportunities are available for both computational and experimental projects.</p>
+            -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>MD<sup>2</sup> Research Group</h3>
+                    <p><a href="https://www.mse.ucla.edu/" target="_blank">Department of Materials Science</a><br>
+                    University of California, Los Angeles<br>
+                    Los Angeles, CA 90095</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="mailto:nszymans@ucla.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/njszym" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?user=TGMOv3kAAAAJ&hl=en" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nathan Szymanski. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

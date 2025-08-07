@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Research | MD2 Research Group | Nathan Szymanski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Research areas of the Materials Design through Dynamics Research Group led by Prof. Nathan Szymanski">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Additional styles to fix the issues */
+        .page-hero {
+            margin-top: 80px; /* Add margin to prevent banner overlap */
+        }
+        
+        .research-area {
+            display: flex;
+            align-items: center;
+            gap: 65px;
+            margin-bottom: 60px;
+            margin-top: 60px;
+        }
+        
+        .research-area.reverse {
+            flex-direction: row-reverse;
+        }
+        
+        .research-text {
+            flex: 1;
+        }
+        
+        .research-image {
+            flex: 0 0 45%; /* Make images take up 45% of width */
+            align-self: flex-start; /* Add this line */
+            margin-top: 96px; /* Add this line to align with headers */
+        }
+        
+        /* Special adjustment for the in-situ XRD image */
+        .research-area:nth-child(2) .research-image {
+            margin-top: 5px; /* Reduced top margin to move this specific image up */
+        }
+        
+        /* Special adjustment for the AI image */
+        .research-area:nth-child(3) .research-image {
+            margin-top: 5px; /* Reduced top margin to move this specific image up */
+        }
+        
+        /* Special adjustment for the sustainability image */
+        .research-area:nth-child(4) .research-image {
+            margin-top: 5px; /* Reduced top margin to move this specific image up */
+        }
+        
+        .research-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .research-area,
+            .research-area.reverse {
+                flex-direction: column;
+            }
+            
+            .research-image {
+                width: 100%;
+                margin-top: 20px;
+            }
+            
+            /* Maintain adjustment for mobile */
+            .research-area:nth-child(2) .research-image {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="research-page">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button id="menu-close" class="menu-close"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="research.html">Research</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="MD2 Research Group Logo">
+                        <span class="group-name"></span>
+                    </a>
+                </div>
+                
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="research.html">Research</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="menu-toggle" class="menu-toggle" aria-label="Mobile menu toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Research Hero Section -->
+    <!--<section class="page-hero">
+        <div class="container">
+            <h1>Our Research</h1>
+            <p>Bridging theory, AI, and experiment to accelerate the development of advanced inorganic materials</p>
+        </div>
+    </section>-->
+
+    <!-- Research Areas -->
+    <section class="research-areas">
+        <div class="container">
+            <div class="research-area">
+                <div class="research-text">
+                    <h2>Modeling Solid-State Phase Transformations</h2>
+                    <p>We develop computational frameworks to model solid-state reaction kinetics under realistic conditions. Combining density functional theory (DFT) calculations and machine learning potentials (MLPs) with kinetic Monte Carlo simulations, we go beyond thermodynamic predictions to understand how materials transform at the atomic scale.</p>
+                    <div style="height: 20px;"></div>
+                    <p>Our approach accounts for diffusion, nucleation, and interface dynamics that determine synthesis outcomes and dictate material properties under operational conditions for energy technologies including Li-ion batteries, solid-oxide fuel cells, and green hydrogen production.</p>
+                </div>
+                <div class="research-image">
+                    <img src="assets/img/research-phase-dynamics.png" alt="Phase dynamics simulation visualization">
+                </div>
+            </div>
+            
+            <div class="research-area reverse">
+                <div class="research-text">
+                    <h2>In-Situ Reaction Monitoring</h2>
+                    <p>In-situ X-ray diffraction (XRD) measurements performed at high temperature reveal how materials transform during synthesis and device operation.</p>
+                    <div style="height: 20px;"></div>
+                    <p>We combine bespoke robotics with AI to automate the collection of in-situ XRD data in high throughput. These measurements directly validate computational predictions by revealing the hidden intermediates that often form in complex reaction pathways.</p>
+                </div>
+                <div class="research-image">
+                    <img src="assets/img/in-situ-xrd.png" alt="In-situ reaction monitoring setup">
+                </div>
+            </div>
+            
+            <div class="research-area">
+                <div class="research-text">
+                    <h2>AI for Materials Characterization</h2>
+                    <p>We create ready-to-use AI tools to facilitate the analysis of characterization data from techniques including XRD, spectroscopy, and electron microscopy. These foundation models are pre-trained to enable rapid interpretation of experimental results without requiring extensive computational resources.</p>
+                    <div style="height: 20px;"></div>
+                    <p>These tools are designed to work under non-standard conditions and with complex multi-phase systems, streamlining the characterization process.</p>
+                </div>
+                <div class="research-image">
+                    <img src="assets/img/research-ai-characterization.png" alt="AI analyzing X-ray diffraction data">
+                </div>
+            </div>
+            
+            <div class="research-area reverse">
+                <div class="research-text">
+                    <h2>Sustainable Materials Synthesis</h2>
+                    <p>We redesign synthesis routes for energy materials to minimize environmental impact while maintaining good performance. Using the tools described above, we optimize each step of manufacturing - from mineral extraction to device fabrication.</p>
+                    <div style="height: 20px;"></div>
+                    <p>Our work primarily focuses on reducing energy consumption, CO<sub>2</sub> emissions, and hazardous chemical use in the production of battery materials and related energy technologies.</p>
+                </div>
+                <div class="research-image">
+                    <img src="assets/img/research-sustainable-synthesis.png" alt="Sustainable materials synthesis process">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>MD<sup>2</sup> Research Group</h3>
+                    <p><a href="https://www.mse.ucla.edu/" target="_blank">Department of Materials Science</a><br>
+                    University of California, Los Angeles<br>
+                    Los Angeles, CA 90095</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="mailto:nszymanski@seas.ucla.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/njszym" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?user=TGMOv3kAAAAJ&hl=en" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nathan Szymanski. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

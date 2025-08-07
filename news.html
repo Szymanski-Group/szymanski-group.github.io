@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>News | MD2 Research Group | Nathan Szymanski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Latest news from the Materials Design through Dynamics Research Group led by Prof. Nathan Szymanski">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Additional styles for news page */
+        .news-container {
+            margin-top: 80px;
+        }
+        
+        .news-item {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+            align-items: flex-start;
+        }
+        
+        .news-image {
+            flex: 0 0 40%;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .news-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .news-content {
+            flex: 1;
+        }
+        
+        .news-date {
+            color: #555;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+        
+        .news-title {
+            margin-bottom: 15px;
+        }
+        
+        .news-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .news-title a:hover {
+            color: #0066cc;
+        }
+        
+        .news-excerpt {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .news-link {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .news-link:hover {
+            text-decoration: underline;
+        }
+        
+        .section-title {
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .news-item {
+                flex-direction: column;
+            }
+            
+            .news-image {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="news-page">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button id="menu-close" class="menu-close"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li class="active"><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="MD2 Research Group Logo">
+                        <span class="group-name"></span>
+                    </a>
+                </div>
+                
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li class="active"><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="menu-toggle" class="menu-toggle" aria-label="Mobile menu toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- News Content -->
+    <section class="news-container">
+        <div class="container">
+            <div style="height: 60px;"></div>
+            <h1 class="section-title">News & Updates</h1>
+            
+            <!-- News Item 1 -->
+            <div class="news-item">
+                <div class="news-image">
+                    <img src="assets/img/news-ai-materials.png" alt="Generative AI for inorganic materials">
+                </div>
+                <div class="news-content">
+                    <div class="news-date">July 15, 2025</div>
+                    <h2 class="news-title"><a href="https://doi.org/10.1039/D5MH00010F">New publication on generative AI for inorganic materials</a></h2>
+                    <p class="news-excerpt">Our work on establishing baselines for the generative design of inorganic crystalline materials is now available in Materials Horizons. This research provides fundamental benchmarks for evaluating generative models in materials science and demonstrates new approaches for constrained crystal structure generation. </p>
+                    <a href="https://doi.org/10.1039/D5MH00010F" class="news-link" target="_blank">Read the article →</a>
+                </div>
+            </div>
+            
+            <!-- News Item 2 -->
+            <div class="news-item">
+                <div class="news-image">
+                    <img src="assets/img/news-topology.png" alt="Topological descriptors of electron density">
+                </div>
+                <div class="news-content">
+                    <div class="news-date">May 7, 2025</div>
+                    <h2 class="news-title"><a href="https://pubs.acs.org/doi/10.1021/acsmaterialslett.5c00390">New publication on topological descriptors of electron density</a></h2>
+                    <p class="news-excerpt">Our work on leveraging topology as a new descriptor for structure and bonding is now available in ACS Materials Letters. We demonstrate how topological analysis of electron density can provide insights into materials properties that complement traditional bonding analysis methods.</p>
+                    <a href="https://pubs.acs.org/doi/10.1021/acsmaterialslett.5c00390" class="news-link" target="_blank">Read the article →</a>
+                </div>
+            </div>
+            
+            <!-- News Item 3 -->
+            <div class="news-item">
+                <div class="news-image">
+                    <img src="assets/img/news-synthesis.png" alt="Computational tools for synthesis">
+                </div>
+                <div class="news-content">
+                    <div class="news-date">May 22, 2024</div>
+                    <h2 class="news-title"><a href="https://pubs.acs.org/doi/10.1021/acsenergylett.4c00821">New publication on computational tools for synthesis</a></h2>
+                    <p class="news-excerpt">Our perspective on computational methods for synthesis planning was recently published in ACS Energy Letters. The article reviews current approaches and outlines future directions for integrating computational tools into materials synthesis workflows.</p>
+                    <a href="https://pubs.acs.org/doi/10.1021/acsenergylett.4c00821" class="news-link" target="_blank">Read the article →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>MD<sup>2</sup> Research Group</h3>
+                    <p><a href="https://www.mse.ucla.edu/" target="_blank">Department of Materials Science</a><br>
+                    University of California, Los Angeles<br>
+                    Los Angeles, CA 90095</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="mailto:nszymans@ucla.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/njszym" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?user=TGMOv3kAAAAJ&hl=en" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nathan Szymanski. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

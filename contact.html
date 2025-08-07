@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact | MD2 Research Group | Nathan Szymanski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact information for the Materials Design through Dynamics Research Group led by Prof. Nathan Szymanski">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Additional styles for contact page */
+        .contact-container {
+            margin-top: 80px;
+        }
+        
+        .contact-content {
+            display: flex;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-image {
+            flex: 0 0 40%;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .contact-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .contact-icon {
+            margin-right: 15px;
+            color: #0066cc;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+        }
+        
+        .submit-btn {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .submit-btn:hover {
+            background-color: #0052a3;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-content {
+                flex-direction: column;
+            }
+            
+            .contact-image {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body class="contact-page">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button id="menu-close" class="menu-close"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="MD2 Research Group Logo">
+                        <span class="group-name"></span>
+                    </a>
+                </div>
+                
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="menu-toggle" class="menu-toggle" aria-label="Mobile menu toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="contact-container">
+        <div class="container">
+            <div style="height: 60px;"></div>
+            <h1 class="section-title">Contact Us</h1>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <h2>Get in Touch</h2>
+                        <p>We welcome inquiries from prospective students, collaborators, and anyone interested in our research. Please feel free to reach out via email or visit us in the Materials Science building at UCLA.</p>
+                        <div style="height: 40px;"></div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:nszymanski@seas.ucla.edu">nszymanski@seas.ucla.edu</a><br>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h3>Address</h3>
+                                Szymanski Research Group<br>
+                                Department of Materials Science and Engineering<br>
+                                University of California, Los Angeles<br>
+                                410 Westwood Plaza<br>
+                                Los Angeles, CA 90095</p>
+                            </div>
+                        </div>
+                        
+                        <!--
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+1 (310) 825-XXXX</p>
+                            </div>
+                        </div>
+                        -->
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-door-open"></i></div>
+                            <div>
+                                <h3>Office</h3>
+                                <p>3532 Boelter Hall</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="contact-image">
+                    <img src="assets/img/mse-building.jpg" alt="UCLA Materials Science and Engineering Building">
+                    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #666;">Materials Science and Engineering Building at UCLA</p>
+                </div>
+            </div>
+            
+            
+            <!--
+            <h2 class="section-title">Send Us a Message</h2>
+            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>MD<sup>2</sup> Research Group</h3>
+                    <p><a href="https://www.mse.ucla.edu/" target="_blank">Department of Materials Science</a><br>
+                    University of California, Los Angeles<br>
+                    Los Angeles, CA 90095</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="mailto:nszymans@ucla.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/njszym" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?user=TGMOv3kAAAAJ&hl=en" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nathan Szymanski. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
