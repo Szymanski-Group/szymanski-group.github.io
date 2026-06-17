@@ -71,6 +71,12 @@
         .research-area:nth-child(4) .research-image {
             margin-top: 5px; /* Reduced top margin to move this specific image up */
         }
+
+        /* Special adjustment for the field-assisted synthesis image */
+        .research-area:nth-child(5) .research-image {
+            margin-top: 5px; /* Reduced top margin to move this specific image up */
+            flex: 0 0 40%; /* Slightly smaller than the other research images */
+        }
         
         .research-image img {
             max-width: 100%;
@@ -153,10 +159,10 @@
         <div class="container">
             <div class="research-area">
                 <div class="research-text">
-                    <h2>Modeling Solid-State Phase Transformations</h2>
-                    <p>We develop computational frameworks to model solid-state reaction kinetics under realistic conditions. Combining density functional theory (DFT) calculations and machine learning potentials (MLPs) with enhanced sampling and kinetic Monte Carlo simulations, we go beyond thermodynamic predictions to understand how materials transform at the atomic scale.</p>
+                    <h2>Modeling Reaction &amp; Interfacial Kinetics</h2>
+                    <p>We develop computational frameworks to model solid-state reaction kinetics under realistic conditions. Combining density functional theory (DFT) calculations and machine learning interatomic potentials (MLIPs) with enhanced-sampling molecular dynamics and kinetic Monte Carlo simulations, we go beyond thermodynamic predictions to understand how materials transform at the atomic scale.</p>
                     <div style="height: 20px;"></div>
-                    <p>Our approach accounts for diffusion, nucleation, and interface dynamics that determine synthesis outcomes and dictate material properties under operational conditions for energy technologies and high-temperature ceramics.</p>
+                    <p>By learning the rare atomic events that govern diffusion, nucleation, and interface migration, we predict how reaction products form and microstructures evolve over experimentally relevant timescales — determining synthesis outcomes and dictating material properties under operational conditions for energy technologies and high-temperature ceramics.</p>
                 </div>
                 <div class="research-image">
                     <img src="assets/img/research-phase-dynamics.png" alt="Phase dynamics simulation visualization">
@@ -165,10 +171,10 @@
             
             <div class="research-area reverse">
                 <div class="research-text">
-                    <h2>In-Situ Reaction Monitoring</h2>
-                    <p>In-situ X-ray diffraction (XRD) measurements performed at high temperature reveal how materials transform during synthesis and device operation.</p>
+                    <h2><em>In-Situ</em> Reaction Monitoring</h2>
+                    <p><em>In-situ</em> X-ray diffraction (XRD) measurements performed at high temperature reveal how materials transform during synthesis and device operation.</p>
                     <div style="height: 20px;"></div>
-                    <p>We combine bespoke robotics with AI to automate the collection of in-situ XRD data in high throughput. These measurements directly validate computational predictions by revealing the hidden intermediates that often form in complex reaction pathways.</p>
+                    <p>We combine bespoke robotics with AI to automate the collection of <em>in-situ</em> XRD data in high throughput. These measurements directly validate computational predictions by revealing the hidden intermediates that often form in complex reaction pathways.</p>
                 </div>
                 <div class="research-image">
                     <img src="assets/img/in-situ-xrd.png" alt="In-situ reaction monitoring setup">
@@ -198,7 +204,19 @@
                     <img src="assets/img/research-sustainable-synthesis.png" alt="Sustainable materials synthesis process">
                 </div>
             </div>
-            
+
+            <div class="research-area">
+                <div class="research-text">
+                    <h2>Synthesis Beyond Temperature &amp; Pressure</h2>
+                    <p>We are developing new routes to reach metastable materials that lie out of reach of conventional heating alone. By applying electromagnetic fields and electrochemical potentials during synthesis, we treat these stimuli as additional thermodynamic axes — beyond temperature and pressure — that reshape reaction energy landscapes and unlock hidden regions of the materials space.</p>
+                    <div style="height: 20px;"></div>
+                    <p>We pair these field-assisted reactions with <em>in-situ</em> diffraction and closed-loop AI control, steering the applied fields in real time to guide the formation of targeted phases.</p>
+                </div>
+                <div class="research-image">
+                    <img src="assets/img/field-assisted-synthesis.png" alt="Field-assisted synthesis with applied electromagnetic fields">
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -208,7 +226,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3>MD<sup>2</sup> Research Group</h3>
-                    <p><a href="https://www.mse.ucla.edu/" target="_blank">Department of Materials Science</a><br>
+                    <p><a href="https://www.mse.ucla.edu/" target="_blank">Department of Materials Science and Engineering</a><br>
                     University of California, Los Angeles<br>
                     Los Angeles, CA 90095</p>
                 </div>
@@ -235,8 +253,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Nathan Szymanski. All rights reserved.</p>
-                <p><a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
+                <p>&copy; 2026 Nathan Szymanski. All rights reserved.</p>
             </div>
         </div>
     </footer>
