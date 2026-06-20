@@ -5,11 +5,14 @@
     <title>Szymanski Research Group | UCLA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Materials Design through Dynamics Research Group led by Prof. Nathan Szymanski">
-    
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://szymanski-research-group.com/">
+
     <!-- Open Graph meta tags for search engines and social media -->
     <meta property="og:title" content="Szymanski Research Group | UCLA">
     <meta property="og:description" content="Materials Design through Dynamics Research Group led by Prof. Nathan Szymanski">
-    <meta property="og:image" content="https://szymanski-research-group.com/assets/img/icon.png">
+    <meta property="og:image" content="https://szymanski-research-group.com/assets/img/group-photo.jpg">
     <meta property="og:url" content="https://szymanski-research-group.com/">
     <meta property="og:type" content="website">
     
@@ -29,6 +32,65 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Structured data (JSON-LD) for search engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://szymanski-research-group.com/#website",
+          "url": "https://szymanski-research-group.com/",
+          "name": "Szymanski Research Group",
+          "description": "Materials Design through Dynamics Research Group led by Prof. Nathan Szymanski at UCLA"
+        },
+        {
+          "@type": "ResearchOrganization",
+          "@id": "https://szymanski-research-group.com/#organization",
+          "name": "Szymanski Research Group",
+          "alternateName": "Materials Design through Dynamics (MD2)",
+          "url": "https://szymanski-research-group.com/",
+          "description": "We build computational and experimental tools for engineering the properties of inorganic materials through synthesis design and control of atomic-scale transformations.",
+          "parentOrganization": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of California, Los Angeles",
+            "url": "https://www.ucla.edu/",
+            "department": {
+              "@type": "Organization",
+              "name": "Department of Materials Science and Engineering",
+              "url": "https://www.mse.ucla.edu/"
+            }
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90095",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://szymanski-research-group.com/#nathan-szymanski",
+          "name": "Nathan Szymanski",
+          "jobTitle": "Assistant Professor",
+          "email": "nszymanski@seas.ucla.edu",
+          "url": "https://szymanski-research-group.com/people.html",
+          "image": "https://szymanski-research-group.com/assets/img/nathan-szymanski.jpg",
+          "worksFor": { "@id": "https://szymanski-research-group.com/#organization" },
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of California, Los Angeles"
+          },
+          "sameAs": [
+            "https://scholar.google.com/citations?user=TGMOv3kAAAAJ&hl=en",
+            "https://github.com/njszym"
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="home-page">

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://szymanski-research-group.com/sitemap.xml
