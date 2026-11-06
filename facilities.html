@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-05RN2C0F8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-05RN2C0F8M');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Facilities | Szymanski Research Group | UCLA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Laboratory and computational facilities of the Materials Design through Dynamics Research Group led by Prof. Nathan Szymanski">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://szymanski-research-group.com/facilities.html">
+
+    <!-- Open Graph meta tags for search engines and social media -->
+    <meta property="og:title" content="Facilities | Szymanski Research Group | UCLA">
+    <meta property="og:description" content="Laboratory and computational facilities of the Materials Design through Dynamics Research Group led by Prof. Nathan Szymanski">
+    <meta property="og:image" content="https://szymanski-research-group.com/assets/img/facilities/sample-prep-labeled.jpg">
+    <meta property="og:url" content="https://szymanski-research-group.com/facilities.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .research-area {
+            display: flex;
+            align-items: flex-start;
+            gap: 60px;
+            margin-bottom: 55px;
+            margin-top: 55px;
+        }
+
+        .research-area.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .research-text {
+            flex: 1;
+        }
+
+        /* Narrower image column than research.html, so the text column carries
+           more of the width and the two sides finish at a similar height. */
+        .research-image {
+            flex: 0 0 38%;
+            align-self: flex-start;
+            margin-top: 5px;
+        }
+
+        .research-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+
+        /* Wide panoramic images (the D8 pair and the Shimadzu pair) get a
+           larger share of the row, since their height is small for their width. */
+        .research-image.wide {
+            flex: 0 0 47%;
+        }
+
+        /* First entry needs clearance from the fixed header. */
+        .research-areas .research-area:first-of-type {
+            margin-top: 140px;
+        }
+
+        .facilities-list {
+            margin-top: 20px;
+            margin-bottom: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #e3e3e3;
+        }
+
+        .facilities-list h2 {
+            margin-bottom: 18px;
+        }
+
+        .facilities-list p {
+            max-width: 900px;
+        }
+
+        @media (max-width: 768px) {
+            .research-area,
+            .research-area.reverse {
+                flex-direction: column;
+            }
+
+            .research-image {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .research-areas .research-area:first-of-type {
+                margin-top: 110px;
+            }
+        }
+    </style>
+</head>
+
+<body class="research-page">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button id="menu-close" class="menu-close"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li class="active"><a href="facilities.html">Facilities</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News &amp; Photos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="MD2 Research Group Logo">
+                        <span class="group-name"></span>
+                    </a>
+                </div>
+
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li class="active"><a href="facilities.html">Facilities</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News &amp; Photos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button id="menu-toggle" class="menu-toggle" aria-label="Mobile menu toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Facilities -->
+    <section class="research-areas">
+        <div class="container">
+
+            <!-- 1. Sample preparation -->
+            <div class="research-area">
+                <div class="research-text">
+                    <h2>Automated Sample Preparation</h2>
+                    <p>Powders are dispensed, mixed, and transferred by an integrated station built on a single
+                    optical table. A Mettler Toledo XPR305DRQ balance doses powder directly into each vial and
+                    records the mass delivered. A Hauschild SpeedMixer DAC 150.3 FVZ homogenizes the batch at
+                    speeds up to 3,500 rpm. A UFACTORY xArm 6 robotic arm moves
+                    samples between the balance, the mixer, the furnace, and storage.</p>
+                    <div style="height: 20px;"></div>
+                    <p>A Thermolyne box furnace sits on the same bench, so a batch is carried through weighing,
+                    mixing, and a solid-state reaction in one place. Samples are fired in air at up to 1,100 &deg;C,
+                    with the arm loading and recovering the crucibles at each step.</p>
+                </div>
+                <div class="research-image">
+                    <img src="assets/img/facilities/sample-prep-labeled.jpg"
+                         alt="Labelled sample preparation station: robotic arm, controlled mixing, powder and liquid dispensing, crucible handling, sample storage, and heating to 1,100 C">
+                </div>
+            </div>
+
+            <!-- 2. Camera recording -->
+            <div class="research-area reverse">
+                <div class="research-text">
+                    <h2>Manual Preparation with Video Recording</h2>
+                    <p>Outside the automated workflow, manual experiments are recorded on video and turned into
+                    digital notebooks. A document camera above the weighing station captures each weighing, and a
+                    vision-language model reads the footage to extract the reagent identity, lot number, balance
+                    reading, temperature, and humidity.</p>
+                    <div style="height: 20px;"></div>
+                    <p>These entries are written to the same database as the ones logged automatically by the
+                    robotic station, and each is linked to the diffraction patterns and the phases identified
+                    from that batch, so we can trace how preparation affected what formed.</p>
+                </div>
+                <div class="research-image">
+                    <img src="assets/img/facilities/camera-monitored.jpg"
+                         alt="Camera-monitored weighing station with overhead document camera and extracted record">
+                </div>
+            </div>
+
+            <!-- 3. In-situ diffraction -->
+            <div class="research-area">
+                <div class="research-text">
+                    <h2><em>In-Situ</em> Powder X-ray Diffraction</h2>
+                    <p>Our Bruker D8 Advance is set up for measurements taken while a sample reacts. An Anton
+                    Paar HTK 1200N chamber on the goniometer holds the sample from room temperature to
+                    1,200 &deg;C under flowing, controlled atmospheres, and patterns are collected continuously
+                    through the chamber window.</p>
+                    <div style="height: 20px;"></div>
+                    <p>Two sources are available. Cu K&alpha; resolves closely spaced reflections, while
+                    Ag K&alpha; lies above the Fe K edge and penetrates further, sampling the full volume of
+                    coarse particles. The LYNXEYE XE-T detector discriminates by energy, which suppresses
+                    fluorescence from iron-bearing samples.</p>
+                </div>
+                <div class="research-image wide">
+                    <img src="assets/img/facilities/xrd-d8-htk.jpg"
+                         alt="Bruker D8 Advance diffractometer and a labelled close-up of the Anton Paar HTK 1200N hot stage">
+                </div>
+            </div>
+
+            <!-- 4. Ex-situ screening -->
+            <div class="research-area reverse">
+                <div class="research-text">
+                    <h2><em>Ex-Situ</em> Characterization</h2>
+                    <p>A Shimadzu XRD-6000 with a Cu source handles routine phase identification on recovered
+                    samples, which are checked after each firing step to confirm which phases formed.</p>
+                    <div style="height: 20px;"></div>
+                    <p>A shared Phenom ProX desktop SEM in the department covers particle size, morphology, and
+                    local composition by EDS.</p>
+                </div>
+                <div class="research-image wide">
+                    <!-- Shimadzu-only two-panel alternative: xrd-shimadzu.jpg -->
+                    <img src="assets/img/facilities/xrd-shimadzu-sem.jpg"
+                         alt="The Shimadzu XRD-6000 goniometer and the Phenom ProX desktop SEM">
+                </div>
+            </div>
+
+            <!-- 5. Computing -->
+            <div class="research-area">
+                <div class="research-text">
+                    <h2>Local Computing Resources</h2>
+                    <p>A Supermicro SYS-741GE-TNRT server with four NVIDIA RTX PRO 6000 Blackwell GPUs, 96 GB
+                    each, was awarded through an NVIDIA Academic Grant. We use it to train machine-learned
+                    interatomic potentials, fit diffraction data by differentiable optimization, and analyze
+                    patterns as they are collected. A second node with a 32-core AMD EPYC 9334 processor runs
+                    density functional theory, nudged elastic band, and phonon calculations.</p>
+                    <div style="height: 20px;"></div>
+                    <p>Larger runs use the UCLA Hoffman2 cluster and national allocations on Purdue Anvil
+                    through NSF ACCESS, the NAIRR Pilot, and Brookhaven's Center for Functional
+                    Nanomaterials.</p>
+                </div>
+                <div class="research-image">
+                    <!-- Three-panel alternative (cards, internals, rack with UPS):
+                         swap for gpu-server-3panel.jpg and add class="wide" to the div above -->
+                    <img src="assets/img/facilities/gpu-server.jpg"
+                         alt="The four RTX PRO 6000 GPUs before installation, and the server with them fitted">
+                </div>
+            </div>
+
+            <!-- Text-only list -->
+            <div class="facilities-list">
+                <h2>Also in the Laboratory</h2>
+                <p>Box and tube furnaces for solid-state reactions and controlled-atmosphere annealing to
+                1,200 &deg;C, a Retsch PM100 planetary ball mill and a benchtop vibratory mill with a zirconia
+                jar for particle-size control and mechanochemical processing, setups for microwave and
+                solution-based synthesis, a Purair
+                ductless fume hood for powder handling, a vacuum drying oven, and an ultrasonic cleaner.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>MD<sup>2</sup> Research Group</h3>
+                    <p><a href="https://www.mse.ucla.edu/" target="_blank">Department of Materials Science and Engineering</a><br>
+                    University of California, Los Angeles<br>
+                    Los Angeles, CA 90095</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News &amp; Photos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="mailto:nszymanski@seas.ucla.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/njszym" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?user=TGMOv3kAAAAJ&hl=en" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nathan Szymanski. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
